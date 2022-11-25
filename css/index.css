@@ -1,0 +1,48 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,400px);
+    column-gap: 200px;
+    row-gap: 40px;
+    padding: 40px 30px;
+}
+
+.box{
+    border: 3px solid #AC0117;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+#box_one{
+    background-image: url('../img/historia.png');
+}
+
+#box_two {
+    background-image: url('../img/akira.png');
+}
+
+#box_three {
+    background-image: url('../img/personagens.png');
+}
+
+#box_four {
+    background-image: url('../img/galeria.png');
+}
+
+.box>div{
+    background-color: rgba(172, 1, 23,.8);
+    padding: 20px; 
+    position: absolute;  
+    bottom: 0;
+    width: 100%;
+}
+.box>div>a{
+    font-family: 'Saiyan-Sans', serif;
+    font-size: 40px;
+    color:#ffffff;
+    display: block;
+    text-align: center;
+}

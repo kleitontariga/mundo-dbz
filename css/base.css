@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+
+@font-face {
+    font-family: "Saiyan-Sans";
+    src: url("Saiyan-Sans.ttf");
+}
+
+* {
+    /* Resetar o CSS */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Elemento */
+main {
+    margin: 0 20px;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+
+h2 {
+    color: #7FCB07;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 12px;
+}
+
+footer {
+    background-color: #e55e2e;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer>p {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Identificador e classe */
+section#menu {
+    background-color: #e55e2e;
+    padding: 7px 10px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    /* Eixo vertical */
+    justify-content: space-between;
+}
+
+img.banner {
+    width: 100vw;
+    /* Equivale a 100% da tela */
+    height: 300px;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+}
+
+/* Hierarquia */
+section#menu>header {
+    display: flex;
+    align-items: center;
+    /* Eixo vertical */
+}
+
+section#menu>header>span {
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: "Saiyan-Sans", serif;
+}
+
+header>nav {
+    background-color: #fda402;
+    padding: 7px 10px;
+}
+
+nav>a:link,
+nav>a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+header>nav>span,
+header>nav>a {
+    font-size: 12px !important;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+main>div {
+    background-color: #AC0117;
+    padding: 10px;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+nav>span+span {
+    text-decoration: underline;
+}
